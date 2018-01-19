@@ -50,7 +50,7 @@ These messages can then be passed into session storage and flashed between page 
 
 Here's a Laravel example:
 
-```
+```php
 Route::post('/submit', function () {
     // Do something
     // ...
