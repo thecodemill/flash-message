@@ -100,6 +100,46 @@ class Message
     }
 
     /**
+     * Return whether the message has an INFO status.
+     *
+     * @return bool
+     */
+    public function isInfo()
+    {
+        return $this->status() == static::STATUS_INFO;
+    }
+
+    /**
+     * Return whether the message has a SUCCESS status.
+     *
+     * @return bool
+     */
+    public function isSuccess()
+    {
+        return $this->status() == static::STATUS_SUCCESS;
+    }
+
+    /**
+     * Return whether the message has a WARNING status.
+     *
+     * @return bool
+     */
+    public function isWarning()
+    {
+        return $this->status() == static::STATUS_WARNING;
+    }
+
+    /**
+     * Return whether the message has a DANGER status.
+     *
+     * @return bool
+     */
+    public function isDanger()
+    {
+        return $this->status() == static::STATUS_DANGER;
+    }
+
+    /**
      * Helper method to generate an INFO message.
      *
      * @param string $content
